@@ -6,7 +6,7 @@ class Main(object):
     def __init__(self, vim):
         self.vim = vim
 
-    @pynvim.command('readLog')
+    @pynvim.command('ReadLog')
     def doReadSTFreeLog(self, args):
         lines = []
         with open(args[0], mode="r") as f:
